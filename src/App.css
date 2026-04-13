@@ -1,0 +1,204 @@
+/* =========================================
+   ITERDX MASTER DNA - FOOTER STABILITY FIX
+   ========================================= */
+:root {
+  --blue-primary: #0b3193;
+  --white: #ffffff;
+  --text-dark: #00002f;
+  --text-muted: #64748b;
+  --nav-height: 150px;
+  --side-gutter: 10%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at center, #ffffff 0%, #d1d9e6 45%, #a3b1c6 100%) !important;
+  background-attachment: fixed !important;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text-dark);
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  padding: 0 var(--side-gutter);
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  z-index: 2000;
+}
+
+.brand-text {
+  font-weight: 950;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dark) !important;
+}
+
+.logo-img {
+  height: 80px !important;
+  width: auto;
+}
+
+/* NAV PILL */
+.nav-pill-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-pill {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 6px;
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  z-index: 2;
+}
+
+.active-pill-bg {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 100px;
+  height: 44px;
+  background: var(--blue-primary);
+  border-radius: 100px;
+  z-index: 1;
+}
+
+/* INQUIRY BUTTON */
+.inquiry-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inquiry-btn {
+  background: var(--blue-primary);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 100px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* CONTENT AREA */
+.page-content {
+  flex: 1;
+  margin-top: var(--nav-height);
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px var(--side-gutter);
+}
+
+.hero-title {
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 950;
+  text-align: center;
+  line-height: 0.9;
+  letter-spacing: -3px;
+}
+
+/* =========================================
+   FOOTER - THE STACKING FIX
+   ========================================= */
+.footer-container {
+  width: 100%;
+  padding: 120px var(--side-gutter) 80px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: auto;
+}
+
+.footer-top {
+  margin-bottom: 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column; /* FORCES VERTICAL STACK */
+  align-items: flex-start;
+}
+
+.footer-col h3 {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-col a {
+  display: block; /* FORCES EACH LINK TO A NEW LINE */
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: var(--blue-primary);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nav-pill { display: none; }
+  .navbar-wrapper { grid-template-columns: 1fr auto; }
+  .footer-grid { grid-template-columns: 1fr; text-align: center; }
+  .footer-col { align-items: center; }
+}
