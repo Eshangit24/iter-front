@@ -1,12 +1,8 @@
-import React from 'react';
+import React from 'react'
+import ServicesShowcase from '../components/ServicesShowcase.jsx'
 
 const Services = () => {
-  return (
-    <section>
-      <h1>Our Services</h1>
-      <p>React Architecture & Industrial Web Design.</p>
-    </section>
-  );
-};
+    return <ServicesShowcase />
+}
 
-export default Services;
+export default Services

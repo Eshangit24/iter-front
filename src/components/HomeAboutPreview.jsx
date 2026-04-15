@@ -1,0 +1,68 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
+const textReveal = {
+    initial: { opacity: 0, x: -60, filter: 'blur(12px)' },
+    whileInView: { opacity: 1, x: 0, filter: 'blur(0px)' },
+    viewport: { once: true, amount: 0.3 },
+    transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1] }
+}
+
+const visualReveal = {
+    initial: { opacity: 0, x: 60, scale: 0.92, filter: 'blur(12px)' },
+    whileInView: { opacity: 1, x: 0, scale: 1, filter: 'blur(0px)' },
+    viewport: { once: true, amount: 0.3 },
+    transition: { duration: 1, ease: [0.22, 1, 0.36, 1] }
+}
+
+function HomeAboutPreview() {
+    return (
+        <section className="home-about-preview">
+            <div className="home-about-preview__shell">
+                <motion.div className="home-about-preview__content" {...textReveal}>
+                    <div className="home-about-preview__eyebrow">
+                        <span className="home-about-preview__eyebrow-index">01</span>
+                        <span className="home-about-preview__eyebrow-divider">//</span>
+                        <span className="home-about-preview__eyebrow-label">WHO WE ARE</span>
+                    </div>
+
+                    <h2 className="home-about-preview__title">
+                        The Engine of
+                        <br />
+                        Digital Resilience
+                    </h2>
+
+                    <p className="home-about-preview__text">
+                        IterDX Global isn&apos;t just a service provider; we are your confidential internal
+                        thinking partner. We bridge the gap between standard community templates and
+                        high-performance proprietary excellence.
+                    </p>
+
+                    <p className="home-about-preview__text">
+                        By integrating AI automation and stabilized infrastructure, we ensure your execution
+                        quality and strategic foresight remain unmatched in the AI-driven landscape.
+                    </p>
+
+                    <Link to="/about" className="home-about-preview__cta">
+                        Read more
+                        <span aria-hidden="true">→</span>
+                    </Link>
+                </motion.div>
+
+                <motion.div className="home-about-preview__visual" {...visualReveal}>
+                    <div className="home-about-preview__shape-wrap">
+                        <div className="home-about-preview__ring" />
+                        <div className="home-about-preview__ring home-about-preview__ring--second" />
+                        <div className="home-about-preview__heart">
+                            <span className="home-about-preview__heart-line home-about-preview__heart-line--one" />
+                            <span className="home-about-preview__heart-line home-about-preview__heart-line--two" />
+                        </div>
+                    </div>
+                </motion.div>
+            </div>
+        </section>
+    )
+}
+
+export default HomeAboutPreview
