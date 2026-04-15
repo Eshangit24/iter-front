@@ -60,7 +60,7 @@ const About = () => {
                         <motion.div className="about-copy wide" {...rightReveal}>
                             <h2 className="about-heading">Why IterDX: Navigating the Shift</h2>
                             <p className="about-paragraph">
-                                We are the consultants for those at risk in the digital transition. We simplify the complex, providing the roadmap and the tools—from AI automation to security vaults—to ensure our partners don&apos;t just survive the digital shift, but thrive within it.
+                                We are the consultants for those at risk in the digital transition. We simplify the complex, providing the roadmap and the tools—from AI automation to security vaults—to ensure our partners do not just survive the digital shift, but thrive within it.
                             </p>
                         </motion.div>
                     </div>

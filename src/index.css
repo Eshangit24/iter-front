@@ -9,10 +9,26 @@ body,
 #root {
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  background: #f3f4f6;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #00002f;
+  min-height: 100vh;
   overflow-x: hidden;
+}
+
+a,
+button,
+img {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
 }

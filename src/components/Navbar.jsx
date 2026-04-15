@@ -1,61 +1,60 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import logo from '../assets/logo.png';
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
-  const [activeTab, setActiveTab] = useState('Home');
-  const tabs = ['Home', 'About', 'Services', 'Projects'];
+    const location = useLocation()
 
-  const handleInquiry = () => {
-    const phoneNumber = "94700000000"; // Replace with your actual number
-    window.open(`https://wa.me/${phoneNumber}`, '_blank');
-  };
+    const tabs = [
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Services', path: '/services' },
+        { name: 'Projects', path: '/projects' },
+        { name: 'Contact', path: '/contact' }
+    ]
 
-  return (
-    <nav className="navbar-wrapper">
-      {/* Brand Section - Made Larger */}
-      <div className="logo-container" style={{ flex: 1 }}>
-        <img src={logo} alt="IDX" className="logo-img" style={{ height: '50px' }} />
-        <span className="brand-text">ITERDX GLOBAL</span>
-      </div>
+    const activeIndex = tabs.findIndex((tab) => tab.path === location.pathname)
 
-      {/* Center Navigation Pill - Animated */}
-      <div className="nav-pill-wrapper" style={{ flex: 2, display: 'flex', justifyContent: 'center' }}>
-        <div className="nav-pill">
-          {tabs.map((tab) => (
-            <a 
-              key={tab}
-              href={`#${tab.toLowerCase()}`}
-              className={`nav-item ${activeTab === tab ? 'active-text' : ''}`}
-              onClick={() => setActiveTab(tab)}
-              style={{ position: 'relative', zIndex: 1 }}
-            >
-              {tab}
-              {activeTab === tab && (
-                <motion.div 
-                  layoutId="active-pill"
-                  className="active-bg"
-                  transition={{ type: 'spring', duration: 0.5 }}
-                />
-              )}
-            </a>
-          ))}
-        </div>
-      </div>
+    return (
+        <nav className="navbar-wrapper">
+            <div className="logo-container">
+                <Link to="/" className="brand-link">
+                    <img src={logo} alt="IterDX Global" className="logo-img" />
+                    <span className="brand-text">ITERDX GLOBAL</span>
+                </Link>
+            </div>
 
-      {/* Inquiry Button - Fixed Logic */}
-      <div className="inquiry-container" style={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-        <motion.button 
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="inquiry-button"
-          onClick={handleInquiry}
-        >
-          Inquiry
-        </motion.button>
-      </div>
-    </nav>
-  );
-};
+            <div className="nav-pill-container">
+                <div className="nav-pill">
+                    {activeIndex !== -1 && (
+                        <motion.div
+                            className="active-pill-bg"
+                            initial={false}
+                            animate={{ x: `calc(${activeIndex} * var(--pill-item-width))` }}
+                            transition={{ type: 'spring', stiffness: 400, damping: 35 }}
+                        />
+                    )}
 
-export default Navbar;
+                    {tabs.map((tab) => (
+                        <Link
+                            key={tab.name}
+                            to={tab.path}
+                            className={`nav-item ${location.pathname === tab.path ? 'is-active' : ''}`}
+                        >
+                            <span>{tab.name}</span>
+                        </Link>
+                    ))}
+                </div>
+            </div>
+
+            <div className="inquiry-btn-container">
+                <Link className="inquiry-btn" to="/contact">
+                    Inquiry
+                </Link>
+            </div>
+        </nav>
+    )
+}
+
+export default Navbar
