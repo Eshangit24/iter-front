@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import HomeServicesCarousel from '../components/HomeServicesCarousel.jsx'
+import HomeAboutPreview from '../components/HomeAboutPreview.jsx'
 
 const Home = () => {
     return (
@@ -34,6 +35,7 @@ const Home = () => {
                 </motion.p>
             </section>
 
+            <HomeAboutPreview />
             <HomeServicesCarousel />
         </>
     )
