@@ -1,5 +1,3 @@
-import hero from '../assets/hero.png'
-
 const servicesData = [
     {
         id: 1,
@@ -7,34 +5,35 @@ const servicesData = [
         title: 'The Virtual Employee',
         subtitle: 'AI Workflow Automation',
         shortDescription:
-            'A custom-integrated AI operative designed to automate back-office operations and customer interactions. We implement AI-driven response systems and data synchronization to modernize your daily execution.',
+            'A custom-integrated AI operative that automates back-office operations, repetitive communication, and customer interactions with structured workflows.',
         detailDescription:
-            'A specialized AI operative that works 24/7 to handle your routine digital tasks and customer inquiries without fatigue.',
-        imageUrl: hero,
+            'A specialized AI workflow layer that operates around the clock to manage recurring business tasks, support responses, and internal routing with speed and consistency.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80',
         steps: [
             {
                 step: 'Step 1',
                 title: 'Process Logic Mapping',
                 content:
-                    'We study your current manual tasks to identify exactly where AI can save you the most time.'
+                    'We audit repetitive operational tasks, define automation triggers, and identify the best workflow opportunities across sales, service, and admin.'
             },
             {
                 step: 'Step 2',
                 title: 'API Bridge Construction',
                 content:
-                    'We securely connect your business apps like WhatsApp or Email so the AI can communicate across all your platforms.'
+                    'We connect your communication and productivity tools, allowing the system to move information securely between email, WhatsApp, forms, and dashboards.'
             },
             {
                 step: 'Step 3',
-                title: 'Intelligence Indexing',
+                title: 'Knowledge Training',
                 content:
-                    'We teach the AI your specific business rules, price lists, and FAQs so it speaks accurately to your customers.'
+                    'We structure your FAQs, policies, pricing, and service rules so the assistant can respond with consistent business-aware answers.'
             },
             {
                 step: 'Step 4',
                 title: 'Safety Deployment',
                 content:
-                    'We set up a safety switch that instantly alerts your human team if a customer has a complex request the AI cannot solve.'
+                    'We define human handoff conditions, escalation routes, and approval checkpoints so complex conversations always stay under control.'
             }
         ]
     },
@@ -44,34 +43,35 @@ const servicesData = [
         title: 'The Business Check-Up',
         subtitle: 'Digital Diagnostic Audit',
         shortDescription:
-            'A professional technical diagnostic service that identifies operational bottlenecks. We provide Digital Maturity Scoring and Process Efficiency Analysis to generate your strategic technical roadmap.',
+            'A strategic technology audit that surfaces operational bottlenecks, wasted tooling, hidden costs, and digital risks across your business.',
         detailDescription:
-            'A professional health scan of your technology to find hidden risks, wasted costs, and opportunities for growth.',
-        imageUrl: hero,
+            'A comprehensive diagnostic review of your systems, workflows, and tools to expose friction points and produce a focused roadmap for digital improvement.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
         steps: [
             {
                 step: 'Step 1',
-                title: 'Data Intake',
+                title: 'System Intake',
                 content:
-                    'We look at your current tools and software to understand how your business is currently running.'
+                    'We document your current software stack, handoff patterns, recurring tasks, and reporting flows to understand how work is actually happening.'
             },
             {
                 step: 'Step 2',
                 title: 'Gap Analysis',
                 content:
-                    'Our AI identifies time-leaks and technical errors that are currently slowing down your team or costing you money.'
+                    'We identify inefficiencies, duplicated effort, manual dependencies, and missing controls that reduce speed, accuracy, and profitability.'
             },
             {
                 step: 'Step 3',
-                title: 'Roadmap Generation',
+                title: 'Roadmap Design',
                 content:
-                    'We provide a clear, step-by-step plan showing you exactly which tech upgrades will give you the best return on investment.'
+                    'We prioritize the most valuable upgrades and sequence them into a practical implementation plan based on urgency, impact, and cost.'
             },
             {
                 step: 'Step 4',
-                title: 'Strategic Briefing',
+                title: 'Leadership Briefing',
                 content:
-                    'A one-on-one session where we explain the findings in plain language and help you decide your next move.'
+                    'We translate the findings into clear business language so leadership can make confident technology decisions without technical guesswork.'
             }
         ]
     },
@@ -79,36 +79,37 @@ const servicesData = [
         id: 3,
         slug: 'the-digital-guard',
         title: 'The Digital Guard',
-        subtitle: 'Cyber-Security & Data Vault',
+        subtitle: 'Cyber Security & Data Vault',
         shortDescription:
-            'Enterprise-grade security hardening focused on identity management and automated data redundancy. We enforce MFA, encrypted vaults, and daily cloud backups to secure your digital assets.',
+            'Security hardening for growing teams, including access reviews, MFA enforcement, credential management, encrypted storage, and backup resilience.',
         detailDescription:
-            'Enterprise-level security that locks down your business accounts and ensures your data is never lost, even in a crisis.',
-        imageUrl: hero,
+            'A practical security foundation that protects access, secures credentials, and keeps your critical business data recoverable in the event of failure or attack.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
         steps: [
             {
                 step: 'Step 1',
                 title: 'Identity Audit',
                 content:
-                    'We review who has access to your systems to ensure there are no open doors for hackers.'
+                    'We review user access, permissions, shadow accounts, and shared credentials to identify weak points across your operating environment.'
             },
             {
                 step: 'Step 2',
-                title: 'System Hardening',
+                title: 'Security Hardening',
                 content:
-                    'We install advanced double-lock login systems and high-security digital vaults for your passwords.'
+                    'We enforce stronger authentication, structured credential handling, and access restrictions that reduce exposure to avoidable threats.'
             },
             {
                 step: 'Step 3',
-                title: 'Vault Automation',
+                title: 'Backup Automation',
                 content:
-                    'We set up an invisible system that saves a fresh backup of your business data every single day to a secure cloud.'
+                    'We establish dependable cloud backup routines and vault architecture so essential files and records remain protected and recoverable.'
             },
             {
                 step: 'Step 4',
-                title: 'Resilience Testing',
+                title: 'Recovery Validation',
                 content:
-                    'We run a fire drill to prove that if your data was ever deleted, we can bring it back perfectly in minutes.'
+                    'We simulate restoration scenarios to confirm that business-critical data can be restored quickly and accurately when needed.'
             }
         ]
     },
@@ -116,36 +117,37 @@ const servicesData = [
         id: 4,
         slug: 'the-intelligence-portal',
         title: 'The Intelligence Portal',
-        subtitle: 'Real-Time Business BI',
+        subtitle: 'Real-Time Business Intelligence',
         shortDescription:
-            'A centralized data visualization gateway that transforms fragmented operational data into actionable insights. We build unified data pipelines and mobile-responsive dashboards for instant performance reporting.',
+            'A unified reporting experience that transforms fragmented business data into live dashboards, KPI visibility, and mobile-ready performance views.',
         detailDescription:
-            'Your business data transformed into a simple, beautiful dashboard on your phone, giving you total clarity on your performance.',
-        imageUrl: hero,
+            'A decision dashboard that consolidates operational data into clear visuals, giving leadership instant access to business performance, movement, and opportunity.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
         steps: [
             {
                 step: 'Step 1',
-                title: 'ETL Pipeline Setup',
+                title: 'Data Pipeline Setup',
                 content:
-                    'We gather information from your sales, banks, and spreadsheets and clean it so it is easy to read.'
+                    'We collect information from sales, finance, operations, and spreadsheets, then clean and structure it for reliable reporting.'
             },
             {
                 step: 'Step 2',
                 title: 'Visualization Layer',
                 content:
-                    'We build a custom mobile dashboard that shows your profit, growth, and trends in clear, simple charts.'
+                    'We design a branded dashboard experience with focused charts, scorecards, and trend indicators that leadership can understand instantly.'
             },
             {
                 step: 'Step 3',
                 title: 'Automated Reporting',
                 content:
-                    'We set up a system that sends you a Weekly Performance Digest directly to your phone every Monday morning.'
+                    'We schedule recurring summaries and performance digests so stakeholders receive key updates without chasing multiple systems.'
             },
             {
                 step: 'Step 4',
-                title: 'Optimization Training',
+                title: 'Decision Enablement',
                 content:
-                    'We show you how to use these new insights to make faster, more profitable decisions for your business.'
+                    'We help your team interpret the numbers, identify patterns, and turn live visibility into better operational and strategic decisions.'
             }
         ]
     },
@@ -155,34 +157,35 @@ const servicesData = [
         title: 'Tuti-Pro LMS',
         subtitle: 'Education Management System',
         shortDescription:
-            'A secure learning environment for educators to host intellectual property. Features include encrypted video hosting, digital material distribution, and robust student access control.',
+            'A private learning platform for educators and institutions to host, protect, manage, and deliver premium course content at scale.',
         detailDescription:
-            'A secure, private digital classroom where educators can host and sell their courses while protecting their videos and materials from being stolen.',
-        imageUrl: hero,
+            'A secure digital learning environment that allows educators to distribute lessons, manage learners, and protect intellectual property across video and downloadable content.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
         steps: [
             {
                 step: 'Step 1',
-                title: 'Infrastructure Deployment',
+                title: 'Platform Foundation',
                 content:
-                    'We build your private teaching website and set up the professional hosting environment for you.'
+                    'We set up the core learning infrastructure, hosting environment, and branded delivery experience for your academic or commercial program.'
             },
             {
                 step: 'Step 2',
-                title: 'Secure Media Gateway',
+                title: 'Secure Media Layer',
                 content:
-                    'We install a digital shield around your videos and PDFs so students can view them, but cannot download or share them illegally.'
+                    'We protect video lessons, downloadable resources, and premium materials with controlled access and theft-resistant delivery settings.'
             },
             {
                 step: 'Step 3',
-                title: 'Access Management',
+                title: 'Enrollment Systems',
                 content:
-                    'We set up the system that handles student logins, payments, and different levels of course access.'
+                    'We configure student onboarding, access permissions, payment flows, and course segmentation for clean administration.'
             },
             {
                 step: 'Step 4',
-                title: 'Platform Launch',
+                title: 'Launch Readiness',
                 content:
-                    'We test everything to ensure a smooth experience for your students and hand you the master keys to your new school.'
+                    'We test the learner journey end to end and prepare your team to operate, support, and scale the platform confidently.'
             }
         ]
     },
@@ -192,34 +195,35 @@ const servicesData = [
         title: 'The Scale Engine',
         subtitle: 'Integrated Digital Transformation',
         shortDescription:
-            'Our flagship full-stack infrastructure overhaul. We combine security, automation, and intelligence into a single scalable ecosystem over a 90-day execution cycle to ensure total business survival.',
+            'A full-stack digital transformation engagement that combines automation, security, reporting, and systems design into a unified business operating model.',
         detailDescription:
-            'Our most powerful service. A complete 3-month digital makeover that rebuilds your business to be faster, more secure, and ready to scale.',
-        imageUrl: hero,
+            'A structured multi-phase transformation program that modernizes the way your business works, secures its operations, and prepares it for scale.',
+        imageUrl:
+            'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80',
         steps: [
             {
                 step: 'Step 1',
-                title: 'Phase 1 Foundations',
+                title: 'Foundation Reset',
                 content:
-                    'We start by securing your accounts and fixing any major tech errors found during your initial audit.'
+                    'We stabilize the basics by correcting core workflow issues, reducing friction, and securing the systems that keep daily operations moving.'
             },
             {
                 step: 'Step 2',
-                title: 'Phase 2 Efficiency',
+                title: 'Automation Rollout',
                 content:
-                    'We move your team into the future by installing AI automation and your Virtual Employee to handle routine work.'
+                    'We introduce workflow automation and digital assistants where they deliver the fastest measurable operational return.'
             },
             {
                 step: 'Step 3',
-                title: 'Phase 3 Clarity',
+                title: 'Visibility Buildout',
                 content:
-                    'We finish by building your Intelligence Portal so you can watch your newly automated business grow in real-time.'
+                    'We establish performance dashboards and reporting structures so growth can be monitored and managed with clarity.'
             },
             {
                 step: 'Step 4',
-                title: 'Ecosystem Stabilization',
+                title: 'Operational Stabilization',
                 content:
-                    'We provide 30 days of active monitoring to ensure your new digital engine is running perfectly as you scale up.'
+                    'We monitor the new ecosystem, refine handoffs, and ensure the upgraded operating model stays reliable as the business expands.'
             }
         ]
     }

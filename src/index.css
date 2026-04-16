@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900;950&display=swap');
+
+:root {
+  --blue-primary: #0b3193;
+  --gold-accent: #d4a955;
+  --white: #ffffff;
+  --text-dark: #00002f;
+  --text-muted: #64748b;
+  --side-gutter: 6%;
+  --pill-item-width: 100px;
+  --nav-desktop-height: 140px;
+  --nav-tablet-height: 122px;
+  --nav-mobile-height: 128px;
+  --page-shell: min(1380px, calc(100% - 48px));
+  --site-max-width: min(1380px, calc(100% - 48px));
+  --site-bg: radial-gradient(circle at center, #ffffff 0%, #d9e2f0 44%, #a5b4cb 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +30,10 @@ body,
 }
 
 body {
-  background: #f3f4f6;
+  background: var(--site-bg);
+  background-attachment: fixed;
   font-family: 'Inter', system-ui, sans-serif;
-  color: #00002f;
+  color: var(--text-dark);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -31,4 +50,15 @@ img {
 
 button {
   font: inherit;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+.page-shell {
+  width: var(--page-shell);
+  margin: 0 auto;
 }

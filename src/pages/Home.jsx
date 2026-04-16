@@ -31,7 +31,7 @@ const Home = () => {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8, duration: 1 }}
                 >
-                    Bridging the gap between generic templates and proprietary brand standards.
+                    Bridging the gap between generic templates and high-standard brand execution with scalable React and modern front-end systems.
                 </motion.p>
             </section>
 

@@ -1,7 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import logo from '../assets/logo.png'
-import contactVisual from '../assets/hero.png'
+
+const contactVisual =
+    'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80'
 
 const fadeUp = {
     initial: { opacity: 0, y: 40, filter: 'blur(12px)' },
@@ -43,7 +45,9 @@ const Contact = () => {
                         <span className="contact-hero__divider" />
 
                         <p className="contact-hero__description">
-                            Don&apos;t navigate the digital shift alone. Partner with our specialized consultants to stabilize your operations, secure your data, and deploy the enterprise-grade AI infrastructure required for your long-term survival.
+                            Build stronger digital foundations with a team that understands execution,
+                            design quality, and scalable front-end delivery. From consultation to
+                            implementation, we help you move with clarity.
                         </p>
 
                         <button
