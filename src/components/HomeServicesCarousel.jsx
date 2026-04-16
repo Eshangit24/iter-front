@@ -13,7 +13,7 @@ const defaultItems = servicesData.map((service) => ({
 
 function HomeServicesCarousel({
                                   title = 'Services',
-                                  description = 'In an era of rapid digital shift, staying traditional is no longer an option. We provide the essential technology and specialized guidance to transition your operations from legacy systems to a stabilized, AI-ready future.',
+                                  description = 'We design digital systems that improve execution, strengthen security, and create the operational clarity needed for modern growth.',
                                   items = defaultItems
                               }) {
     const totalSlides = items.length

@@ -34,14 +34,14 @@ function HomeAboutPreview() {
                     </h2>
 
                     <p className="home-about-preview__text">
-                        IterDX Global isn&apos;t just a service provider; we are your confidential internal
-                        thinking partner. We bridge the gap between standard community templates and
-                        high-performance proprietary excellence.
+                        IterDX Global is a digital transformation partner focused on turning complex
+                        operational challenges into secure, scalable systems. We help ambitious teams
+                        replace friction with structure, speed, and measurable clarity.
                     </p>
 
                     <p className="home-about-preview__text">
-                        By integrating AI automation and stabilized infrastructure, we ensure your execution
-                        quality and strategic foresight remain unmatched in the AI-driven landscape.
+                        From AI workflow design to platform delivery, we build the infrastructure that
+                        helps modern businesses move with confidence in a rapidly changing digital market.
                     </p>
 
                     <Link to="/about" className="home-about-preview__cta">
